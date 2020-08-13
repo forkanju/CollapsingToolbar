@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleGravity="top|center"
+            app:expandedTitleMarginBottom="20dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:title="Strength">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/plane" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorAccent"
+                    android:text="25"
+                    android:textColor="#FFF"
+                    android:textSize="52sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/colorAccent"
+                    android:text="25"
+                    android:textColor="#FFF"
+                    android:textSize="52sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/colorAccent"
+                    android:text="25"
+                    android:textColor="#FFF"
+                    android:textSize="52sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.MaterialComponents.Dark" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="2dp"
+                android:background="#512020"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/plane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Day 1"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="2dp"
+                android:background="#512020"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/plane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Day 2"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="2dp"
+                android:background="#512020"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/plane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Day 3"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="2dp"
+                android:background="#512020"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/plane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Day 4"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="2dp"
+                android:background="#512020"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/plane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Day 5"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="2dp"
+                android:background="#512020"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/plane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Day 6"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="2dp"
+                android:background="#512020"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/plane" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Day 7"
+                    android:textColor="#FFF"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
